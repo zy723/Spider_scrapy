@@ -51,7 +51,7 @@ class JdSpider(scrapy.Spider):
             item['book_press'] = li.xpath(".//span[@class='p-bi-store']/a/@title").extract_first()  # 出版社
             item['book_publish_date'] = li.xpath(".//span[@class='p-bi-date']/text()").extract_first().strip()  # 出版日期
             item["book_sku"] = li.xpath("./div/@data-sku").extract_first()  # 库存编号
-            sku_url = 'https://p.3.cn/prices/mgets?skuIds=J_{}'.format(item['book_sku'])
+            sku_url = 'https://p.3.cn/prices/mgets?skuIds={}'.format(item['book_sku'])
 
             yield scrapy.Request(
                 sku_url,
