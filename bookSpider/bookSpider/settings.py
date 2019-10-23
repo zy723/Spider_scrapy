@@ -17,6 +17,7 @@ NEWSPIDER_MODULE = 'bookSpider.spiders'
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
 SCHEDULER_PERSIST = True
+REDIS_URL = 'redis://127.0.0.1:6379'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
@@ -27,7 +28,7 @@ ROBOTSTXT_OBEY = False
 
 LOG_LEVER = 'WARNING'
 
-REDIS_URL = 'redis://127.0.0.1:6379'
+
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
