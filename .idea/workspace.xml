@@ -2,47 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6f57369-526e-4d9d-8428-8b6fc97c2c1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/heima/day01/03.hr-tenxun.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/YoutubeDwon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/AUTHORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/COPYING" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/ChangeLog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/LICENSE.OpenSSL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/NEWS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/README.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/README.mingw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/aria2.session" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/aria2c.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/aria2关闭.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/aria2启动.VBS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/config.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/aria2/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/css/aria-ng-2a46099f8c.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/css/bootstrap-3.4.1.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/css/plugins-9b678dd4f5.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/js/angular-packages-1.6.10.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/js/aria-ng-994a2d3441.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/js/bootstrap-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/js/echarts-common-3.8.5.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/js/moment-with-locales-2.24.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/js/plugins-01928ba731.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/langs/zh_Hans.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/langs/zh_Hant.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/mongoose.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/mongoose.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/tileicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localSpider/YoutubeSpider/yaaw/touchicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima/day02/01-qiushi_single.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima/day02/02-qiushi_threading.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,47 +14,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/heima/day01/jsonpathTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-              <folding>
-                <element signature="e#1#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/heima/day01/02-NeiHan8.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/heima/day01/03.hr-tenxun.py">
+        <entry file="file://$PROJECT_DIR$/heima/day02/02-qiushi_threading.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+            <state relative-caret-position="290">
+              <caret line="104" column="24" lean-forward="true" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/requests/api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -119,6 +47,8 @@
         <option value="$PROJECT_DIR$/heima/day01/jsonpathTest.py" />
         <option value="$PROJECT_DIR$/heima/day01/02-NeiHan8.py" />
         <option value="$PROJECT_DIR$/heima/day01/03.hr-tenxun.py" />
+        <option value="$PROJECT_DIR$/heima/day02/01-qiushi_single.py" />
+        <option value="$PROJECT_DIR$/heima/day02/02-qiushi_threading.py" />
       </list>
     </option>
   </component>
@@ -147,6 +77,17 @@
             <path>
               <item name="Spider_scrapy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spider_scarpy" type="462c0819:PsiDirectoryNode" />
+              <item name="heima" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spider_scrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spider_scarpy" type="462c0819:PsiDirectoryNode" />
+              <item name="heima" type="462c0819:PsiDirectoryNode" />
+              <item name="day02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spider_scrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spider_scarpy" type="462c0819:PsiDirectoryNode" />
               <item name="localSpider" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -158,7 +99,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/localSpider" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/heima/day02" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -171,6 +112,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/heima/day02" />
       <recent name="$PROJECT_DIR$/localSpider" />
     </key>
   </component>
@@ -274,7 +216,7 @@
       <workItem from="1566303324489" duration="92000" />
       <workItem from="1566303450118" duration="705000" />
       <workItem from="1566304929871" duration="13676000" />
-      <workItem from="1571842972582" duration="9986000" />
+      <workItem from="1571842972582" duration="17104000" />
     </task>
     <task id="LOCAL-00001" summary="py3">
       <created>1566305037997</created>
@@ -311,11 +253,18 @@
       <option name="project" value="LOCAL" />
       <updated>1571928469274</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add YouTube spider">
+      <created>1572272820362</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572272820362</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24459000" />
+    <option name="totallyTimeSpent" value="31577000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -330,12 +279,12 @@
     <frame x="48" y="-10" width="1313" height="779" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14893617" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14893617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44509518" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44509518" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -344,7 +293,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.5270864" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500394" side_tool="true" weight="0.329429" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.34846267" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.34846267" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49960598" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -370,7 +319,18 @@
     <MESSAGE value="py3" />
     <MESSAGE value="jd spider" />
     <MESSAGE value="neihan8 spider" />
-    <option name="LAST_COMMIT_MESSAGE" value="neihan8 spider" />
+    <MESSAGE value="add YouTube spider" />
+    <option name="LAST_COMMIT_MESSAGE" value="add YouTube spider" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/heima/day02/02-qiushi_threading.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Spider_scrapy$jsonpathTest.coverage" NAME="jsonpathTest Coverage Results" MODIFIED="1571847036274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heima/day01" />
@@ -435,26 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/heima/day01/02-NeiHan8.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heima/day01/jsonpathTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding>
-            <element signature="e#1#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/requests/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -486,10 +426,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/heima/day02/01-qiushi_single.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/heima/day01/03.hr-tenxun.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="-145">
           <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heima/day01/02-NeiHan8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heima/day01/jsonpathTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <folding>
+            <element signature="e#1#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heima/day02/02-qiushi_threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="104" column="24" lean-forward="true" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
