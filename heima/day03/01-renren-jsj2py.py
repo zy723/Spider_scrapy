@@ -13,8 +13,8 @@ class Renren(object):
             'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 7 Build/MOB30X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
             # 'X-Requested-With': 'XMLHttpRequest'
         }
-        self.sessions.get(
-            'http://activity.renren.com/livecell/log?c1=-100&c2=&c3=&c4=&from_uid=&isFull=&QRCodeRecharge=')
+        # self.sessions.get(
+        #     'http://activity.renren.com/livecell/log?c1=-100&c2=&c3=&c4=&from_uid=&isFull=&QRCodeRecharge=')
 
     def get_rkey(self):
         url = 'http://activity.renren.com/livecell/rKey'
@@ -54,7 +54,7 @@ A[t]=0;t++,o--}for(2==h&&(A[s]=0,A[i.chunkSize-2]=2,A[i.chunkSize-1]=0),S=A.leng
         print(ret_login)
 
     def run(self):
-        self.login('13812345678', 'abc123')
+        self.login('13162190051', 'abc123')
 
 
 if __name__ == '__main__':

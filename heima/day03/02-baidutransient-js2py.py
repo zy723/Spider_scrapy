@@ -47,7 +47,7 @@ class BaiduTransient(object):
         print(ret_tt[0])
 
     def run(self):
-        self.baidu_transient('我是密码3')
+        self.baidu_transient('不懂啊')
 
 
 if __name__ == '__main__':
