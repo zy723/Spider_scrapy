@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6f57369-526e-4d9d-8428-8b6fc97c2c1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima/day04/01-mongodb-test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima/day04/stu.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima/day03/03-douyu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima/day05/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Spider_scrapy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Spider_scrapy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -18,22 +17,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/heima/day04/stu.json">
+        <entry file="file://$PROJECT_DIR$/heima/day05/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" selection-start-line="2" selection-end-line="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heima/day05/Tencent/Tencent/spiders/tencent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="45">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/heima/day04/01-mongodb-test.py">
+        <entry file="file://$PROJECT_DIR$/heima/day05/Tencent/Tencent/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#25#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="124">
+              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heima/day05/Tencent/Tencent/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heima/day05/Tencent/Tencent/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1091">
+              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -68,8 +94,10 @@
         <option value="$PROJECT_DIR$/heima/day03/02-baidutransient-js2py.py" />
         <option value="$PROJECT_DIR$/heima/day03/01-renren-jsj2py.py" />
         <option value="$PROJECT_DIR$/heima/day02/07-selenium.py" />
-        <option value="$PROJECT_DIR$/heima/day04/stu.json" />
-        <option value="$PROJECT_DIR$/heima/day04/01-mongodb-test.py" />
+        <option value="$PROJECT_DIR$/heima/day05/README.md" />
+        <option value="$PROJECT_DIR$/heima/day05/Tencent/Tencent/pipelines.py" />
+        <option value="$PROJECT_DIR$/heima/day05/Tencent/Tencent/settings.py" />
+        <option value="$PROJECT_DIR$/heima/day05/Tencent/Tencent/spiders/tencent.py" />
       </list>
     </option>
   </component>
@@ -87,29 +115,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Spider_scrapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spider_scrapy" type="462c0819:PsiDirectoryNode" />
+              <item name="Spider_scarpy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Spider_scrapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spider_scrapy" type="462c0819:PsiDirectoryNode" />
+              <item name="Spider_scarpy" type="462c0819:PsiDirectoryNode" />
               <item name="heima" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spider_scrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spider_scarpy" type="462c0819:PsiDirectoryNode" />
+              <item name="heima" type="462c0819:PsiDirectoryNode" />
+              <item name="day05" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/heima/day04" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/heima/day02" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -122,7 +156,6 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/heima/day04" />
       <recent name="$PROJECT_DIR$/heima/day02" />
       <recent name="$PROJECT_DIR$/localSpider" />
     </key>
@@ -139,29 +172,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.01-mongodb-test">
-    <configuration name="01-mongodb-test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Spider_scrapy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/heima/day04" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heima/day04/01-mongodb-test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.07-selenium">
     <configuration name="01-renren-jsj2py" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Spider_scrapy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,6 +187,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heima/day03/01-renren-jsj2py.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="02-NeiHan8" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Spider_scrapy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/heima/day01" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heima/day01/02-NeiHan8.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -252,11 +285,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.01-mongodb-test" />
-        <item itemvalue="Python.02-baidutransient-js2py" />
         <item itemvalue="Python.07-selenium" />
         <item itemvalue="Python.01-renren-jsj2py" />
+        <item itemvalue="Python.02-baidutransient-js2py" />
         <item itemvalue="Python.03.hr-tenxun" />
+        <item itemvalue="Python.02-NeiHan8" />
       </list>
     </recent_temporary>
   </component>
@@ -276,8 +309,7 @@
       <workItem from="1571842972582" duration="17104000" />
       <workItem from="1573050038597" duration="9743000" />
       <workItem from="1573374281767" duration="26012000" />
-      <workItem from="1574903757146" duration="210000" />
-      <workItem from="1574904049971" duration="5208000" />
+      <workItem from="1576420064847" duration="3168000" />
     </task>
     <task id="LOCAL-00001" summary="py3">
       <created>1566305037997</created>
@@ -339,7 +371,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72750000" />
+    <option name="totallyTimeSpent" value="70500000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -351,14 +383,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="-3" width="1317" height="771" extended-state="6" />
+    <frame x="49" y="-3" width="1311" height="771" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21960784" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21670607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49881798" weight="0.30307466" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49881798" visible="true" weight="0.24743778" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39970717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -367,7 +400,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.5270864" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501182" side_tool="true" weight="0.35724744" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3499268" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.41581258" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49960598" weight="0.32880846" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -410,9 +443,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Spider_scrapy$jsonpathTest.coverage" NAME="jsonpathTest Coverage Results" MODIFIED="1571847036274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heima/day01" />
-    <SUITE FILE_PATH="coverage/Spider_scrapy$01_mongodb_test.coverage" NAME="01-mongodb-test Coverage Results" MODIFIED="1574906008620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heima/day04" />
     <SUITE FILE_PATH="coverage/Spider_scrapy$02_NeiHan8.coverage" NAME="02-NeiHan8 Coverage Results" MODIFIED="1571928429181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heima/day01" />
-    <SUITE FILE_PATH="coverage/Spider_scrapy$02_baidutransient_js2py.coverage" NAME="02-baidutransient-js2py Coverage Results" MODIFIED="1574904358985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heima/day03" />
+    <SUITE FILE_PATH="coverage/Spider_scrapy$02_baidutransient_js2py.coverage" NAME="02-baidutransient-js2py Coverage Results" MODIFIED="1573734403204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heima/day03" />
     <SUITE FILE_PATH="coverage/Spider_scrapy$03_hr_tenxun.coverage" NAME="03.hr-tenxun Coverage Results" MODIFIED="1572272659633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heima/day01" />
     <SUITE FILE_PATH="coverage/Spider_scrapy$01_renren_jsj2py.coverage" NAME="01-renren-jsj2py Coverage Results" MODIFIED="1573744957740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heima/day03" />
     <SUITE FILE_PATH="coverage/Spider_scrapy$07_selenium.coverage" NAME="07-selenium Coverage Results" MODIFIED="1573751552132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heima/day02" />
@@ -443,9 +475,28 @@
     <entry file="file:///usr/lib/python3.5/urllib/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/scrapy/spidermiddlewares/urllength.py" />
-    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/parsel/selector.py" />
+    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/scrapy/spidermiddlewares/urllength.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/parsel/selector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bookSpider/bookSpider/spiders/jd2.py" />
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bookSpider/bookSpider/spiders/jd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -470,7 +521,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/requests/models.py" />
+    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="378" selection-start-line="378" selection-end-line="378" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/localSpider/YoutubeSpider/YoutubeDwon.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -488,7 +545,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/requests/api.py" />
+    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/heima/day01/03.hr-tenxun.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-145">
@@ -566,9 +629,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/js2py/evaljs.py" />
-    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/codecs.py" />
-    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/requests/sessions.py" />
+    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/js2py/evaljs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="200" column="8" selection-start-line="200" selection-start-column="8" selection-end-line="200" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="322" selection-start-line="322" selection-end-line="322" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/Spider_py3/lib/python3.5/site-packages/requests/sessions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4643">
+          <caret line="551" column="69" lean-forward="true" selection-start-line="551" selection-start-column="69" selection-end-line="551" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/heima/day01/jsonpathTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -580,6 +661,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-901">
           <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heima/day03/02-baidutransient-js2py.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="44" column="53" lean-forward="true" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -595,47 +686,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/heima/day02/07-selenium.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="132" column="18" lean-forward="true" selection-start-line="132" selection-start-column="18" selection-end-line="132" selection-end-column="18" />
+        <state relative-caret-position="648">
+          <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/heima/day03/02-baidutransient-js2py.py">
+    <entry file="file://$PROJECT_DIR$/heima/day04/01-mongodb-test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        <state relative-caret-position="240">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heima/day03/03-douyu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/heima/day04/stu.json">
+    <entry file="file://$PROJECT_DIR$/heima/day05/Tencent/Tencent/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="-1091">
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/heima/day04/01-mongodb-test.py">
+    <entry file="file://$PROJECT_DIR$/heima/day05/Tencent/Tencent/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#25#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heima/day05/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heima/day05/Tencent/Tencent/spiders/tencent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heima/day05/Tencent/Tencent/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
         </state>
       </provider>
     </entry>
