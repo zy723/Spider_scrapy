@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6f57369-526e-4d9d-8428-8b6fc97c2c1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima/a_exmple/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima/day10/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima/day10/bookSpider_Pro/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima/day10/bookSpider_Pro/bookSpider/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Spider_scrapy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Spider_scrapy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookSpider/bookSpider/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/heima/day10/AQI_Pro/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookSpider/bookSpider/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/heima/day10/bookSpider_Pro/bookSpider/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookSpider/bookSpider/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/heima/day10/bookSpider_Pro/bookSpider/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookSpider/bookSpider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/heima/day10/bookSpider_Pro/bookSpider/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookSpider/bookSpider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/heima/day10/bookSpider_Pro/bookSpider/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookSpider/bookSpider/spiders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/heima/day10/bookSpider_Pro/bookSpider/spiders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookSpider/bookSpider/spiders/jd.py" beforeDir="false" afterPath="$PROJECT_DIR$/heima/day10/bookSpider_Pro/bookSpider/spiders/jd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookSpider/scrapy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/heima/day10/bookSpider_Pro/scrapy.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/heima/day10/AQI_Pro/AQI/AQI/spiders/aqi.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -124,14 +105,7 @@
               <item name="Spider_scrapy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spider_scrapy" type="462c0819:PsiDirectoryNode" />
               <item name="heima" type="462c0819:PsiDirectoryNode" />
-              <item name="day10" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spider_scrapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spider_scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="heima" type="462c0819:PsiDirectoryNode" />
-              <item name="day10" type="462c0819:PsiDirectoryNode" />
-              <item name="AQI_Pro" type="462c0819:PsiDirectoryNode" />
+              <item name="a_exmple" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,7 +126,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -313,7 +287,7 @@
       <workItem from="1573050038597" duration="9743000" />
       <workItem from="1573374281767" duration="26012000" />
       <workItem from="1576420064847" duration="3168000" />
-      <workItem from="1579482020922" duration="7120000" />
+      <workItem from="1579482020922" duration="7434000" />
     </task>
     <task id="LOCAL-00001" summary="py3">
       <created>1566305037997</created>
@@ -371,11 +345,25 @@
       <option name="project" value="LOCAL" />
       <updated>1573667310109</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="day10 study scrapy AQI">
+      <created>1579505421439</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1579505421439</updated>
+    </task>
+    <task id="LOCAL-00010" summary="day10 study scrapy AQI">
+      <created>1579505579651</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1579505579651</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77620000" />
+    <option name="totallyTimeSpent" value="77934000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,7 +376,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16190477" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -403,8 +390,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.5270864" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501182" side_tool="true" weight="0.35724744" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2795699" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50158733" side_tool="true" visible="true" weight="0.2795699" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4984127" visible="true" weight="0.2795699" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49960598" weight="0.32880846" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -427,13 +414,17 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/heima/a_exmple/scrapy-redis" />
+    </ignored-roots>
     <MESSAGE value="py3" />
     <MESSAGE value="jd spider" />
     <MESSAGE value="neihan8 spider" />
     <MESSAGE value="add YouTube spider" />
     <MESSAGE value="day2 thread pool gevent" />
     <MESSAGE value="day3 study js2y jsonpath" />
-    <option name="LAST_COMMIT_MESSAGE" value="day3 study js2y jsonpath" />
+    <MESSAGE value="day10 study scrapy AQI" />
+    <option name="LAST_COMMIT_MESSAGE" value="day10 study scrapy AQI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -739,7 +730,7 @@
     <entry file="file://$PROJECT_DIR$/heima/day10/AQI_Pro/AQI/AQI/spiders/aqi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
