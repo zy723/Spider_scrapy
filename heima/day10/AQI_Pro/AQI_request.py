@@ -35,7 +35,7 @@ def DES_decrypt(decrypted_text):
 def DES_decrypt_history(decrypted_text):
     '''DES解密(history接口)'''
     encryptdata = decrypted_text.encode()
-    des = DES('1bbb415a', '41d96dd9ee1dc0db')  # iv,key
+    des = DES('xESOOshClMDMuOuE', 'higQZAEabUbp4G0K')  # iv,key
     decryptdata = des.decrypt(encryptdata)
     return decryptdata
 
@@ -88,8 +88,8 @@ def AES_encrypt_history(text):
     '''AES加密(history接口)'''
     # text:待加密文本
     text = pkcs7padding(text)
-    key = '2e1bc1e3ca65a4cb'  # 密钥key
-    iv = b'c7054589723df4a7'  # 偏移量IV
+    key = 'd9sF1BBD3ICeDVGg'  # 密钥key
+    iv = b'fCvq8j6xDqmNcDvu'  # 偏移量IV
     aes = AES.new(add_to_16(key), AES.MODE_CBC, iv)  # 初始化加密器
     encrypted_text = str(base64.encodebytes(aes.encrypt(add_to_16(text))), encoding='utf8').replace('\n', '')  # 加密
     # print('AES加密值:', encrypted_text)
@@ -100,8 +100,8 @@ def AES_decrypt_history(encrypted_text):
     '''AES解密(history接口)'''
     # text:待解密文本
     encrypted_text = pkcs7padding(encrypted_text)
-    key = 'd1119693b6a33af8'  # 密钥key
-    iv = b'7aba45824f51431a'  # 偏移量IV
+    key = 'aGE84jwkIFOkOQfK'  # 密钥key
+    iv = b'bU2VU2tSPNNAQPbM'  # 偏移量IV
     aes = AES.new(add_to_16(key), AES.MODE_CBC, iv)  # 初始化加密器
     decrypted_text = str(
         aes.decrypt(base64.decodebytes(bytes(encrypted_text, encoding='utf8'))).rstrip(b'\0').decode("utf8"))  # 解密
@@ -198,7 +198,7 @@ def get_history(city, month):
         'month': month  # 只能按月查询 eg: "201811"
     }
     # (1)Base64加密
-    appId = 'b73a4aaa989f54997ef7b9c42b6b4b29'
+    appId = 'ba0c300c64f8685b828df375629af09f'
     clienttype = 'WEB'
     timestamp = str(int(time.time() * 1000))
     json_2 = json.dumps(queryparam).encode('utf-8').decode('unicode_escape').replace(': ', ':').replace(', ', ',')
@@ -214,7 +214,7 @@ def get_history(city, month):
     param = base64.b64encode(json_3).decode()
     aes_encrypted = AES_encrypt_history(param)
     url = 'https://www.aqistudy.cn/historydata/api/historyapi.php'
-    data = {'hd': aes_encrypted}
+    data = {'h1BEKEez0': aes_encrypted}
     headers = {
         'Host': 'www.aqistudy.cn',
         'Origin': 'https://www.aqistudy.cn',
@@ -223,7 +223,7 @@ def get_history(city, month):
     }
     html = requests.post(url, data=data, headers=headers)
     encrypted_data = html.text
-    # print('返回加密数据:' + encrypted_data)
+    print('返回加密数据:' + encrypted_data)
     # Step2:解密返回的加密数据
     '''
     解密函数:
@@ -253,8 +253,22 @@ def get_history(city, month):
         print('抱歉,查询天气数据失败!请核对查询参数是否正确!')
 
 
+def get_test():
+    url = 'https://www.aqistudy.cn/historydata/'
+    headers = {
+        'Host': 'www.aqistudy.cn',
+        'Origin': 'https://www.aqistudy.cn',
+        'Referer': 'https://www.aqistudy.cn/html/city_detail.html',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    }
+    ret_txt = requests.get(url, headers=headers).content.decode()
+    print(ret_txt)
+
+
 if __name__ == '__main__':
     # 三种查询方式
-    get_aqistudy('GETDETAIL', '上海', 'HOUR', '2018-11-06 05:00:00', '2018-11-06 08:00:00')
-    get_aqistudy('GETCITYWEATHER', '上海', 'HOUR', '2018-11-06 05:00:00', '2018-11-06 08:00:00')
-    get_history('上海', '201811')
+    # get_aqistudy('GETDETAIL', '上海', 'HOUR', '2018-11-06 05:00:00', '2018-11-06 08:00:00')
+    # get_aqistudy('GETCITYWEATHER', '上海', 'HOUR', '2018-11-06 05:00:00', '2018-11-06 08:00:00')
+    # get_history('上海', '201811')
+
+    get_test()
