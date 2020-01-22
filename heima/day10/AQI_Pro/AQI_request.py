@@ -1,7 +1,9 @@
 import pyDes
 from Crypto.Cipher import AES
 import hashlib, json, time, base64, requests
-
+from lxml import etree
+import execjs
+import re
 
 class DES(object):
     # IV必须是 8 字节长度的十六进制数
@@ -265,10 +267,142 @@ def get_test():
     print(ret_txt)
 
 
+class AQIData(object):
+    def __init__(self):
+        self.base_host = 'https://www.aqistudy.cn'
+
+    def get_history_data(self, city, month):
+        """
+
+        const askU7Pz0hYVb = "aQbRsUypdLd2eNSZ";
+        const asioCAlPARXJ = "bkO067xmKeXSXHG4";
+        const ackk2AuIYKun = "dvCs3EjGhB1KFDi4";
+        const aciEYA1rAGZk = "fN65hQVLn4GTWfA7";
+        const dskMriSZe7l3 = "hYhPB7zF8gv2HeAo";
+        const dsiC0DdtBoEE = "xbFyhKq5UP9DT3Wl";
+        const dckA1XHI6K0M = "oIAU0nA6P9T2XxpU";
+        const dciSg16lXe2n = "pPnpt3QH2V2LZxjt";
+        const aes_local_key = 'emhlbnFpcGFsbWtleQ==';
+        const aes_local_iv = 'emhlbnFpcGFsbWl2';
+
+        const askOBMGmB75S = "aPqPQcf1Ine2f4QB";
+        const asiDO6lJkWm0 = "bwJrQdFDfsaCCGd2";
+        const ackWgp0jYMZI = "d56AdlQNlsO5Cx9g";
+        const aciAZZEXJJoB = "f8fZViDZEFI14sZi";
+        const dskmTMSx0xca = "hFa3eEXyBmwuGM2H";
+        const dsi0Ja0YkzkD = "xSB40RttS8jjqwRq";
+        const dckdYKmHRXow = "oCzXViHAa3Ze3NrF";
+        const dciAtAs475r5 = "px5gjnKXZFAJxcCL";
+        const aes_local_key = 'emhlbnFpcGFsbWtleQ==';
+        const aes_local_iv = 'emhlbnFpcGFsbWl2';
+
+
+        function dNts5M8favlljUkeI(data) {
+        data = BASE64.decrypt(data);
+        data = DES.decrypt(data, dskMriSZe7l3, dsiC0DdtBoEE);
+        data = AES.decrypt(data, askU7Pz0hYVb, asioCAlPARXJ);
+        data = BASE64.decrypt(data);
+        return data
+        }
+        e3e6b23f26ade009cdb97eb741c1c11e
+
+        appId = '7a4ebffe96d76a8fc26c6373797f01e2';
+        var clienttype = 'WEB';
+        var timestamp = new Date().getTime();
+        var param = {
+            appId: appId,
+            method: method,
+            timestamp: timestamp,
+            clienttype: clienttype,
+            object: obj,
+            secret: hex_md5(appId + method + timestamp + clienttype + JSON.stringify(ObjectSort(obj)))
+        };
+        param = BASE64.encrypt(JSON.stringify(param));
+
+        :param city:
+        :param month:
+        :return:
+        """
+        url = self.base_host + '/historydata/api/historyapi.php'
+        headers = {
+            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            'X-Requested-With': 'XMLHttpRequest',
+            'Referer': 'https://www.aqistudy.cn/historydata/daydata.php?city=%E6%8A%9A%E9%A1%BA&month=2019-11',
+            'Accept-Language': 'zh-CN',
+            'Accept-Encoding': 'gzip, deflate',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36',
+            'Host': 'www.aqistudy.cn',
+            'Content-Length': '282',
+            'Connection': 'Keep-Alive',
+            'Cache-Control': 'no-cache',
+        }
+
+        # {"appId":"cad7ce0505844254702142820e4a5b1e","method":"GETDAYDATA","timestamp":1579656267581,"clienttype":"WEB","object":{"city":"抚顺","month":"201911"},"secret":"bbff43b4faae28b1010337bf5d6d02fa"}
+        appId = '7a4ebffe96d76a8fc26c6373797f01e2'
+        method = 'GETDAYDATA'
+        # timestamp = int(time.time() * 1000)
+        timestamp = 1579659753530
+        clienttype = 'WEB'
+        obj = {"city": city, "month": month}
+        # 7a4ebffe96d76a8fc26c6373797f01e2GETDAYDATA1579659753530WEB{"city":"抚顺","month":"201911"}
+        # a7d45c881ac916b680a6477c04c9fbe6
+        secret = hashlib.md5((appId + method + str(timestamp) + clienttype + json.dumps(obj).encode('utf-8').decode(
+            'unicode_escape').replace(': ', ':').replace(', ', ',')).encode()).hexdigest()
+        base_data = {"appId": appId,
+                     "method": method,
+                     "timestamp": timestamp,
+                     "clienttype": clienttype,
+                     "object": obj,
+                     "secret": secret
+                     }
+        param = base64.b64encode(
+            json.dumps(base_data).encode('utf-8').decode('unicode_escape').replace(': ', ':').replace(', ',
+                                                                                                      ',').encode()).decode()
+        data = {
+            'h3TVqn5AG': param
+        }
+        tt = requests.post(url, data=data, headers=headers).content.decode()
+        print(tt)
+
+    def get_enc_key(self):
+        url = 'https://www.aqistudy.cn/historydata/daydata.php?city=%E6%8A%9A%E9%A1%BA&month=2019-11'
+        ret = requests.get(url).content.decode()
+        html = etree.HTML(ret)
+        path = html.xpath('//script[2]/@src')[0]
+        enc_url = self.base_host + '/historydata/' + path
+        # print(enc_url)
+        ret_tt = requests.get(enc_url).content.decode().replace('eval', '')
+        ret_t = execjs.eval(ret_tt).replace('const', 'var')
+        print(ret_t)
+
+        ret_t1 = re.findall('var .*?="(.*?)";', ret_t)
+        ret_t2 = re.findall("appId='(.*?)'", ret_t)
+
+
+        print(ret_t1)
+        print(ret_t2)
+    def re_test(self, ss):
+        str = '''const askvAIqYSPfc="a90ABfGa7SptZkJb";const asiLMjsqRWcr="bExihGISzPax52jB";const ackBhgi4WCcC="d92Sp2tQD02zFklG";const aciYs9AKeRLP="fNx4lGT9vgbNb7rp";const dskYHwhoMeyb="hA3DoZ3cAaga7aHH";const dsiHkqM8wTSz="xGVIn6dPjHifhsFB";const dckpvOAYk1VH="o47ZyLL6BCGNaTY6";const dcikfZ55tR7h="plOAK5GtS2599BcY";const aes_local_key='emhlbnFpcGFsbWtleQ==';const aes_local_iv='emhlbnFpcGFsbWl2';var BASE64={encrypt:function(text){var b=new Base64();return b.encode(text)},decrypt:function(text){var b=new Base64();return b.decode(text)}};var DES={encrypt:function(text,key,iv){var secretkey=(CryptoJS.MD5(key).toString()).substr(0,16);var secretiv=(CryptoJS.MD5(iv).toString()).substr(24,8);secretkey=CryptoJS.enc.Utf8.parse(secretkey);secretiv=CryptoJS.enc.Utf8.parse(secretiv);var result=CryptoJS.DES.encrypt(text,secretkey,{iv:secretiv,mode:CryptoJS.mode.CBC,padding:CryptoJS.pad.Pkcs7});return result.toString()},decrypt:function(text,key,iv){var secretkey=(CryptoJS.MD5(key).toString()).substr(0,16);var secretiv=(CryptoJS.MD5(iv).toString()).substr(24,8);secretkey=CryptoJS.enc.Utf8.parse(secretkey);secretiv=CryptoJS.enc.Utf8.parse(secretiv);var result=CryptoJS.DES.decrypt(text,secretkey,{iv:secretiv,mode:CryptoJS.mode.CBC,padding:CryptoJS.pad.Pkcs7});return result.toString(CryptoJS.enc.Utf8)}};var AES={encrypt:function(text,key,iv){var secretkey=(CryptoJS.MD5(key).toString()).substr(16,16);var secretiv=(CryptoJS.MD5(iv).toString()).substr(0,16);secretkey=CryptoJS.enc.Utf8.parse(secretkey);secretiv=CryptoJS.enc.Utf8.parse(secretiv);var result=CryptoJS.AES.encrypt(text,secretkey,{iv:secretiv,mode:CryptoJS.mode.CBC,padding:CryptoJS.pad.Pkcs7});return result.toString()},decrypt:function(text,key,iv){var secretkey=(CryptoJS.MD5(key).toString()).substr(16,16);var secretiv=(CryptoJS.MD5(iv).toString()).substr(0,16);secretkey=CryptoJS.enc.Utf8.parse(secretkey);secretiv=CryptoJS.enc.Utf8.parse(secretiv);var result=CryptoJS.AES.decrypt(text,secretkey,{iv:secretiv,mode:CryptoJS.mode.CBC,padding:CryptoJS.pad.Pkcs7});return result.toString(CryptoJS.enc.Utf8)}};var localStorageUtil={save:function(name,value){var text=JSON.stringify(value);text=BASE64.encrypt(text);text=AES.encrypt(text,aes_local_key,aes_local_iv);try{localStorage.setItem(name,text)}catch(oException){if(oException.name==='QuotaExceededError'){console.log('超出本地存储限额！');localStorage.clear();localStorage.setItem(name,text)}}},check:function(name){return localStorage.getItem(name)},getValue:function(name){var text=localStorage.getItem(name);var result=null;if(text){text=AES.decrypt(text,aes_local_key,aes_local_iv);text=BASE64.decrypt(text);result=JSON.parse(text)}return result},remove:function(name){localStorage.removeItem(name)}};function getDataFromLocalStorage(key,period){if(typeof period==='undefined'){period=0}var d=DES.encrypt(key);d=BASE64.encrypt(key);var data=localStorageUtil.getValue(key);if(data){const time=data.time;const current=new Date().getTime();if(new Date().getHours()>=0&&new Date().getHours()<5&&period>1){period=1}if(current-(period*60*60*1000)>time){data=null}if(new Date().getHours()>=5&&new Date(time).getDate()!==new Date().getDate()&&period===24){data=null}}return data}function ObjectSort(obj){var newObject={};Object.keys(obj).sort().map(function(key){newObject[key]=obj[key]});return newObject}function d8l2PXTRWQKU1(data){data=BASE64.decrypt(data);data=DES.decrypt(data,dskYHwhoMeyb,dsiHkqM8wTSz);data=AES.decrypt(data,askvAIqYSPfc,asiLMjsqRWcr);data=BASE64.decrypt(data);return data}var p7XD6tBQIa9UNqq=(function(){function ObjectSort(obj){var newObject={};Object.keys(obj).sort().map(function(key){newObject[key]=obj[key]});return newObject}return function(method,obj){var appId='54ed6b8519e8aed1c76f2d948941258e';var clienttype='WEB';var timestamp=new Date().getTime();var param={appId:appId,method:method,timestamp:timestamp,clienttype:clienttype,object:obj,secret:hex_md5(appId+method+timestamp+clienttype+JSON.stringify(ObjectSort(obj)))};param=BASE64.encrypt(JSON.stringify(param));param=DES.encrypt(param,dckpvOAYk1VH,dcikfZ55tR7h);return param}})();function skSctZXWtfL88(method,object,callback,period){const key=hex_md5(method+JSON.stringify(object));const data=getDataFromLocalStorage(key,period);if(!data){var param=p7XD6tBQIa9UNqq(method,object);$.ajax({url:'api/historyapi.php',data:{h9159K32Z:param},type:"post",success:function(data){data=d8l2PXTRWQKU1(data);obj=JSON.parse(data);if(obj.success){if(period>0){obj.result.time=new Date().getTime();localStorageUtil.save(key,obj.result)}callback(obj.result)}else{console.log(obj.errcode,obj.errmsg)}}})}else{callback(data)}}'''
+        ret_t = re.findall('var .*?="(.*?)";', str)
+        ret_t2 = re.findall("appId='(.*?)'", str)
+
+
+        print(ret_t)
+        print(ret_t2)
+
+
+    def run(self):
+        # self.get_history_data("抚顺", "201911")
+        self.get_enc_key()
+        # self.re_test()
+
+
 if __name__ == '__main__':
     # 三种查询方式
     # get_aqistudy('GETDETAIL', '上海', 'HOUR', '2018-11-06 05:00:00', '2018-11-06 08:00:00')
     # get_aqistudy('GETCITYWEATHER', '上海', 'HOUR', '2018-11-06 05:00:00', '2018-11-06 08:00:00')
     # get_history('上海', '201811')
 
-    get_test()
+    # get_test()
+
+    AQIData().run()
