@@ -47,7 +47,7 @@ class BaiduTransient(object):
         print(ret_tt[0])
 
     def run(self):
-        self.baidu_transient('不懂啊')
+        self.baidu_transient('文字/图片广告均非论坛意见，请担保交易勿直接付款，由此产生的责任自负')
 
 
 if __name__ == '__main__':
